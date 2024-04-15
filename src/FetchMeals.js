@@ -25,7 +25,7 @@ const editMeal = (mealId, title, setTitle, setMeal, setEditing) => {
 };
 
 const deleteMeal = (_id, setMeal) => {
-    axios.delete(`${myURL}/${_id}`)
+    axios.delete(`${myURL}/deleteMeal/${_id}`)
     .then((data) => {
         getAllMeals(setMeal)
     })
